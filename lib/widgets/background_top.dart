@@ -6,7 +6,7 @@ Positioned backgroundTop() {
     left: 0,
     child: Image.asset(
       'assets/images/main_top.png',
-      scale: 1.8,
+      scale: 2,
     ),
   );
 }

@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter_svg/flutter_svg.dart';
 import 'package:login_and_signup/Pages/background/widgets/background_bottom.dart';
 import 'package:login_and_signup/Pages/log_in/log_in_page.dart';
+import 'package:login_and_signup/Pages/sign_up/sign_up_page.dart';
 import 'package:login_and_signup/widgets/background_top.dart';
 import 'package:login_and_signup/widgets/custom_button.dart';
 import 'package:login_and_signup/widgets/text_title.dart';
@@ -30,9 +31,14 @@ class BackgroundPage extends StatelessWidget {
                     TextTitle(title: 'WELCOME TO EDU'),
                     SizedBox(height: 30),
                     Center(
-                      child: SvgPicture.asset('assets/icons/chat.svg'),
+                      child: SvgPicture.asset(
+                        'assets/icons/chat.svg',
+                        fit: BoxFit.fill,
+                        width: 300,
+                        height: 300,
+                      ),
                     ),
-                    SizedBox(height: 20),
+                    SizedBox(height: 30),
                     CustomButton(
                       title: "LOGIN",
                       color: kWhiteColor,
@@ -51,7 +57,14 @@ class BackgroundPage extends StatelessWidget {
                       title: "SIGNUP",
                       color: kBlackColor,
                       bgColor: kPrimaryLightColor,
-                      onPress: () {},
+                      onPress: () {
+                        Navigator.push(
+                          context,
+                          MaterialPageRoute(
+                            builder: (context) => SignUp(),
+                          ),
+                        );
+                      },
                     ),
                   ],
                 ),

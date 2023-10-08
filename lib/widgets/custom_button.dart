@@ -16,7 +16,6 @@ class CustomButton extends StatelessWidget {
   Widget build(BuildContext context) {
     return Container(
       width: double.infinity,
-      height: 50,
       margin: const EdgeInsets.symmetric(horizontal: 30),
       decoration: BoxDecoration(),
       child: CupertinoButton(

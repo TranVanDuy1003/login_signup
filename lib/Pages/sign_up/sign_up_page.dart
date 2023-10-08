@@ -26,17 +26,22 @@ class SignUp extends StatelessWidget {
                 left: 0,
                 child: Image.asset(
                   'assets/images/signup_top.png',
-                  scale: 1.8,
+                  scale: 2,
                 ),
               ),
               Padding(
-                padding: const EdgeInsets.only(top: 130.0),
+                padding: const EdgeInsets.only(top: 120.0),
                 child: Column(
                   crossAxisAlignment: CrossAxisAlignment.center,
                   children: [
                     TextTitle(title: 'SignUP'),
                     SizedBox(height: 20),
-                    SvgPicture.asset('assets/icons/signup.svg'),
+                    SvgPicture.asset(
+                      'assets/icons/signup.svg',
+                      fit: BoxFit.fill,
+                      width: 300,
+                      height: 300,
+                    ),
                     SizedBox(height: 20),
                     CustomTextField(
                       icon: Icons.person,

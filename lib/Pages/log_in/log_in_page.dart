@@ -31,13 +31,18 @@ class _LogInState extends State<LogIn> {
               backgroundTop(),
               LoginBgBottom(),
               Padding(
-                padding: const EdgeInsets.only(top: 130),
+                padding: const EdgeInsets.only(top: 120),
                 child: Column(
                   crossAxisAlignment: CrossAxisAlignment.center,
                   children: [
                     TextTitle(title: "LOGIN"),
                     SizedBox(height: 20),
-                    SvgPicture.asset('assets/icons/login.svg'),
+                    SvgPicture.asset(
+                      'assets/icons/login.svg',
+                      fit: BoxFit.fill,
+                      width: 300,
+                      height: 300,
+                    ),
                     SizedBox(height: 20),
                     //email
                     CustomTextField(
